@@ -57,10 +57,13 @@ export function Home() {
                 className="group px-8 py-4 rounded-full transition-all duration-300 hover:scale-105"
                 style={{ backgroundColor: "#FF6F61", color: "#FAF7F2", fontFamily: "Inter, sans-serif", fontSize: "1.125rem", fontWeight: 600, boxShadow: "0 10px 30px rgba(255, 111, 97, 0.3)" }}
                 onClick={() => scrollToSection("contact")}
+                aria-label="Scroll to contact section"
               >
                 <span className="flex items-center gap-2">Get in touch <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" /></span>
               </button>
-              <button type="button" className="px-8 py-4 rounded-full transition-all duration-300 hover:scale-105" style={{ backgroundColor: "white", color: "#111111", fontFamily: "Inter, sans-serif", fontSize: "1.125rem", fontWeight: 600, boxShadow: "0 4px 20px rgba(0, 0, 0, 0.08)" }} onClick={() => scrollToSection("experience")}>
+              <button type="button" className="px-8 py-4 rounded-full transition-all duration-300 hover:scale-105" style={{ backgroundColor: "white", color: "#111111", fontFamily: "Inter, sans-serif", fontSize: "1.125rem", fontWeight: 600, boxShadow: "0 4px 20px rgba(0, 0, 0, 0.08)" }} onClick={() => scrollToSection("experience")}
+                aria-label="Scroll to experience section"
+              >
                 View my work
               </button>
             </div>
@@ -110,7 +113,7 @@ export function Home() {
                 <div className="mb-3 flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                   <div className="flex items-start gap-3">
                     <div className="flex size-14 shrink-0 items-center justify-center overflow-hidden rounded-xl ring-1 ring-black/[0.06]" style={{ backgroundColor: "#FAF7F2" }} aria-hidden>
-                      {job.logoSrc ? <img src={job.logoSrc} alt="" className="h-full w-full object-contain p-[0.4rem]" style={job.logoScale != null ? { transform: `scale(${job.logoScale})` } : undefined} loading="lazy" /> : <span className="font-semibold leading-none" style={{ fontFamily: "Inter, sans-serif", fontSize: "1.0625rem", color: "#FF6F61" }}>{job.company.trim().charAt(0).toUpperCase()}</span>}
+                      {job.logoSrc ? <img src={job.logoSrc} alt={`${job.company} logo`} className="h-full w-full object-contain p-[0.4rem]" style={job.logoScale != null ? { transform: `scale(${job.logoScale})` } : undefined} loading="lazy" /> : <span className="font-semibold leading-none" style={{ fontFamily: "Inter, sans-serif", fontSize: "1.0625rem", color: "#FF6F61" }}>{job.company.trim().charAt(0).toUpperCase()}</span>}
                     </div>
                     <div className="min-w-0">
                       <h3 className="mb-1" style={{ fontFamily: "Libre Baskerville, serif", fontSize: "1.375rem", fontWeight: 700 }}>{job.role}</h3>
@@ -166,9 +169,15 @@ export function Home() {
           <div className="group p-10 rounded-2xl cursor-pointer transition-all duration-300 hover:scale-[1.01]" style={{ backgroundColor: "white", boxShadow: "0 2px 12px rgba(0, 0, 0, 0.06)" }}>
             <h3 className="mb-4" style={{ fontFamily: "Libre Baskerville, serif", fontSize: "1.5rem", fontWeight: 700 }}>The Race to Modernize the Home: The Evolution of the Smart Speaker</h3>
             <p className="mb-6 text-lg leading-relaxed" style={{ fontFamily: "Inter, sans-serif", opacity: 0.8 }}>Analyzing how Amazon, Google, and Apple shared the smart-speaker market from 2014-2026 through early product decisions, ecosystem strategy, and long-term trade-offs. Paper highlights how coherence and trust ultimately outlast speed, breadth, and first-mover advantage in platform products.</p>
-            <span className="inline-flex items-center gap-2" style={{ fontFamily: "Inter, sans-serif", color: "#FF6F61", fontWeight: 600 }} aria-disabled="true">
-              <span className="border-b-2 border-transparent transition-all">Publishing April 2026</span>
-            </span>
+              <button
+                className="inline-flex items-center gap-2"
+                style={{ fontFamily: "Inter, sans-serif", color: "#FF6F61", fontWeight: 600, background: 'transparent', border: 'none', padding: 0 }}
+                disabled
+                aria-label="Publishing April 2026 (currently unavailable)"
+                title="Publishing April 2026 (currently unavailable)"
+              >
+                <span className="border-b-2 border-transparent transition-all">Publishing April 2026</span>
+              </button>
           </div>
         </div>
       </section>
@@ -182,8 +191,8 @@ export function Home() {
               <h2 className="mb-6" style={{ fontFamily: "Libre Baskerville, serif", fontSize: "clamp(2rem, 4.5vw, 3rem)", fontWeight: 400, color: "#111111" }}>Let's get in touch</h2>
               <p className="mb-10 text-xl max-w-2xl mx-auto" style={{ fontFamily: "Inter, sans-serif", color: "#111111", opacity: 0.8 }}>I'd love to chat! I'm always open to meeting new people, trading ideas, or talking through interesting problems.</p>
               <div className="flex flex-wrap justify-center gap-4">
-                <a href="hsteffens30@gmail.com" className="px-8 py-4 rounded-full transition-all duration-300 hover:scale-105" style={{ backgroundColor: "#111111", color: "#FAF7F2", fontFamily: "Inter, sans-serif", fontSize: "1.125rem", fontWeight: 600, boxShadow: "0 4px 20px rgba(17, 17, 17, 0.2)" }}><span className="flex items-center gap-2"><Mail className="w-5 h-5" />Email me</span></a>
-                <a href="https://www.linkedin.com/in/hailey-steffens/" target="_blank" rel="noopener noreferrer" className="px-8 py-4 rounded-full transition-all duration-300 hover:scale-105" style={{ backgroundColor: "#111111", color: "#FAF7F2", fontFamily: "Inter, sans-serif", fontSize: "1.125rem", fontWeight: 600, boxShadow: "0 2px 12px rgba(0, 0, 0, 0.1)" }}><span className="flex items-center gap-2"><Linkedin className="w-5 h-5" />LinkedIn</span></a>
+                <a href="mailto:hsteffens30@gmail.com" aria-label="Email Hailey Steffens" title="Email Hailey Steffens" className="px-8 py-4 rounded-full transition-all duration-300 hover:scale-105" style={{ backgroundColor: "#111111", color: "#FAF7F2", fontFamily: "Inter, sans-serif", fontSize: "1.125rem", fontWeight: 600, boxShadow: "0 4px 20px rgba(17, 17, 17, 0.2)" }}><span className="flex items-center gap-2"><Mail className="w-5 h-5" />Email me</span></a>
+                <a href="https://www.linkedin.com/in/hailey-steffens/" target="_blank" rel="noopener noreferrer" aria-label="Open Hailey Steffens LinkedIn (opens in new tab)" title="Open LinkedIn profile (opens in new tab)" className="px-8 py-4 rounded-full transition-all duration-300 hover:scale-105" style={{ backgroundColor: "#111111", color: "#FAF7F2", fontFamily: "Inter, sans-serif", fontSize: "1.125rem", fontWeight: 600, boxShadow: "0 2px 12px rgba(0, 0, 0, 0.1)" }}><span className="flex items-center gap-2"><Linkedin className="w-5 h-5" />LinkedIn</span></a>
               </div>
             </div>
           </div>
