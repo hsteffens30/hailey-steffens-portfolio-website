@@ -23,13 +23,7 @@ Notes
 - This project uses Vite and Tailwind. Build with `npm run build`.
 - The repo was created and pushed from the local machine.
 
-  # Hailey Steffens Personal Portfolio
+Running the code
 
-  This is a code bundle for my personal portfolio website.
+Run `npm i` to install the dependencies, then `npm run dev` to start the development server.
 
-  ## Running the code
-
-  Run `npm i` to install the dependencies.
-
-  Run `npm run dev` to start the development server.
-  
