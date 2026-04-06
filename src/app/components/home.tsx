@@ -87,7 +87,7 @@ export function Home() {
               </div>
               <div className="space-y-4">
                 <p>My CS background helps me work closely with engineering while staying grounded in what users actually need.</p>
-                <p>Outside of work I’m usually skiing, traveling somewhere new, or picking up a new creative project. Always happiest when I’m learning something new.</p>
+                <p>Outside of work I’m usually skiing, traveling somewhere new, or picking up a new creative project. I'm always happiest when learning something new.</p>
               </div>
             </div>
           </div>
@@ -104,7 +104,7 @@ export function Home() {
 
           <div className="space-y-4">
             {([
-              { role: "Technical Program Manager Intern", company: "Microsoft", logoSrc: "/logos/Microsoft.png", logoScale: 0.88, period: "Jun 2025 - Sep 2025", description: "Owned Power BI feature spec, leading user discovery with 300+ users. Delivered full vision, requirementments, and roadmap 3+ weeks early while aligning engineer, design, and leadership." },
+              { role: "Technical Program Manager Intern", company: "Microsoft", logoSrc: "/logos/Microsoft.png", logoScale: 0.88, period: "Jun 2025 - Sep 2025", description: "Owned Power BI feature spec, leading user discovery with 300+ users. Delivered full vision, requirementments, and roadmap 3+ weeks early while aligning engineering, design, and leadership." },
               { role: "Program Manager Intern", company: "Korry Electronics", logoSrc: "/logos/Korry.png", period: "Jun 2023 - Sep 2023", description: "Drove 7 cross-functional initatives across engineering, manufacturing, and leadership using Agile practices. Drove customer-informed feature decisions." },
               { role: "Software Engineer Intern", company: "Korry Electronics", logoSrc: "/logos/Korry.png", period: "Jun 2024 - Sep 2024", description: "Built a C++ application that unblocked recurring microcontroller testing workflow. Drove adoption through clear technical documentation." },
               { role: "Research Assistant", company: "Western Washington University", logoSrc: "/logos/wwu.png", period: "Mar 2025 - Present", description: "Designed UX for privacy awareness tool and ran user studies to measure effectiveness." },
