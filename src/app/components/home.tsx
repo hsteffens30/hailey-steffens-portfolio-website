@@ -202,7 +202,7 @@ export function Home() {
       {/* Footer */}
       <footer className="border-t py-16" style={{ borderColor: "rgba(17, 17, 17, 0.08)", opacity: 0.5 }}>
         <div className={`${sectionContainer} text-center`}>
-          <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.875rem" }}>© 2026 — Designed & built with care</p>
+          <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.875rem" }}>© 2026</p>
         </div>
       </footer>
     </div>
