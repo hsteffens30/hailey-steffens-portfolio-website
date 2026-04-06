@@ -1,7 +1,7 @@
 
-  # Homepage Layout Concepts
+  # Hailey Steffens Personal Portfolio
 
-  This is a code bundle for Homepage Layout Concepts. The original project is available at https://www.figma.com/design/JyWFyI4sVeHBQqvKhSQruT/Homepage-Layout-Concepts.
+  This is a code bundle for my personal portfolio website.
 
   ## Running the code
 
